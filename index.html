@@ -1,3 +1,172 @@
-# test
-this is a test
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS - DIV框架测试</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="css/kube.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/prettify.css">
+    <link rel="stylesheet" type="text/css" href="css/icon.css">
+    <link rel="stylesheet" type="text/css" href="css/color.css">
+
+
+    <script type="text/javascript" src="js/prettify.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="js/easyui-lang-zh_CN.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var sw = $(window).width();
+            if (sw < 767) {
+                $('body').layout('collapse', 'west');
+            }
+            $('.navigation-toggle span').bind('click', function () {
+                $('#head-menu').toggle();
+            });
+        });
+        function openView(path,e) {
+            var name = $(e).text();
+            if ($('#tab').tabs('exists', name)) {
+                $('#tab').tabs('select', name);
+            } else {
+                $('#tab').tabs('add', {
+                    title: name,
+                    href: path+'.html',
+                    closable: true,
+                    bodyCls: 'content-doc',
+                    extractor: function (data) {
+                        data = $.fn.panel.defaults.extractor(data);
+                        return data;
+                    }
+                });
+            }
+        }
+    </script>
+    <style type="text/css">
+        .tree-title {
+            font-size: 14px;
+        }
+
+            .tree-title a {
+                text-decoration: none;
+            }
+
+        #head-menu {
+            position: absolute;
+            z-index: 8;
+            display: none;
+            background: #eaf8ff;
+            color: #134da5;
+            left: 0;
+            padding: 0 4.5%;
+            top: 66px;
+        }
+
+            #head-menu .navbar {
+                margin: 0 40px 20px 40px;
+            }
+
+    </style>
+</head>
+
+<body class="easyui-layout" style="text-align:left">
+    <div id="head-menu">
+        <div class="navbar navbar-right">
+            <ul>
+                <li><a href="/">DIV框架测试</a></li>
+            </ul>
+        </div>
+    </div>
+    <div region="north" border="false" class="group wrap header" style="height:66px;font-size:100%">
+        <div class="content">
+            <div class="navigation-toggle" data-tools="navigation-toggle" data-target="#navbar-1">
+                <span>DIV框架测试</span>
+            </div>
+            <div id="elogo" class="navbar navbar-left">
+                <ul>
+                    <li>
+                        <a href="/"><img src="css/images/logo.png" alt="DIV框架测试" /></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="navbar-1" class="navbar navbar-right">
+                <ul>
+                    <li><a href="/">DIV框架测试</a></li>
+                </ul>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <script type="text/javascript">
+            function setNav() {
+                var demosubmenu = $('#demo-submenu');
+                if (demosubmenu.length) {
+                    if ($(window).width() < 450) {
+                        demosubmenu.find('a:last').hide();
+                    } else {
+                        demosubmenu.find('a:last').show();
+                    }
+                }
+                if ($(window).width() < 767) {
+                    $('.navigation-toggle').each(function () {
+                        $(this).show();
+                        var target = $(this).attr('data-target');
+                        $(target).hide();
+                        setDemoNav();
+                    });
+                } else {
+                    $('.navigation-toggle').each(function () {
+                        $(this).hide();
+                        var target = $(this).attr('data-target');
+                        $(target).show();
+                    });
+                }
+            }
+            function setDemoNav() {
+                $('.navigation-toggle').each(function () {
+                    var target = $(this).attr('data-target');
+                    if (target == '#navbar-demo') {
+                        if ($(target).is(':visible')) {
+                            $(this).css('margin-bottom', 0);
+                        } else {
+                            $(this).css('margin-bottom', '2.3em');
+                        }
+                    }
+                });
+            }
+            $(function () {
+                setNav();
+                $(window).bind('resize', function () {
+                    setNav();
+                });
+                $('.navigation-toggle').bind('click', function () {
+                    var target = $(this).attr('data-target');
+                    $(target).toggle();
+                    setDemoNav();
+                });
+            })
+
+        </script>
+    </div>
+    <div region="west" split="true" title="目录" style="width:8%;min-width:120px;padding:5px;">
+        <ul class="easyui-tree">
+            <li iconCls="icon-form">
+                <span>功能菜单</span>
+                <ul>
+                    <li iconCls="icon-gears"><a href="#" onclick="openView('1', this)">功能1</a></li>
+                    <li iconCls="icon-gears"><a href="#" onclick="openView('2', this)">功能2</a></li>
+                    <li iconCls="icon-gears"><a href="#" onclick="openView('3', this)">功能3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div region="center">
+        <div id="tab" class="easyui-tabs" fit="true" border="false" plain="true">
+            <div title="welcome" href="DeskTop.html" class="content-doc"></div>
+        </div>
+    </div>
+</body>
+</html>
