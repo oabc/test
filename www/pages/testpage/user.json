@@ -1,0 +1,31 @@
+{
+   "rows":[
+      {
+         "username":"admin",
+         "realname":"admin",
+         "role":"管理员",
+         "phone":"13411116666",
+         "address":"中国",
+         "remark":"测试abc",
+         "createtime":"2017-03-07 17:38:44"
+      },
+      {
+         "username":"张三",
+         "realname":"张三",
+         "role":"管理员",
+         "phone":"13411114444",
+         "address":"中国",
+         "remark":"测试abc",
+         "createtime":"2017-03-05 17:38:44"
+      },
+      {
+         "username":"李四",
+         "realname":"李四",
+         "role":"员工",
+         "phone":"13411112222",
+         "address":"中国",
+         "remark":"测试abc",
+         "createtime":"2017-03-02 17:38:44"
+      }
+   ]
+}

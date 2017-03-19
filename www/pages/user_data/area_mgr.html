@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>农产品质量安全监管追溯平台</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<!-- Bootstrap 3.3.5 -->
+		<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="../../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+		<!-- Ionicons -->
+		<link rel="stylesheet" href="../../plugins/ionicons-2.0.1/css/ionicons.min.css">
+		<!-- Theme style -->
+		<link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+		<!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect.
+    -->
+		<link rel="stylesheet" href="../../dist/css/skins/skin-blue.min.css">
+
+		<!-- Added -->
+		<!-- daterange picker -->
+		<link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker-bs3.css">
+		<!-- Bootstrap time Picker -->
+		<link rel="stylesheet" href="../../plugins/timepicker/bootstrap-timepicker.min.css">
+
+		<link rel="stylesheet" href="../../dist/css/my.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+
+	<body class="hold-transition skin-blue sidebar-mini">
+		<div class="wrapper">
+
+			<!-- Main Header -->
+			<header class="main-header">
+
+				<!-- Logo -->
+				<a href="" class="logo">
+					<!-- mini logo for sidebar mini 50x50 pixels -->
+					<span class="logo-mini"><b>智旅</b></span>
+					<!-- logo for regular state and mobile devices -->
+					<span class="logo-lg"><img src="../../dist/img/logo.png"></span>
+				</a>
+
+				<!-- Header Navbar -->
+				<nav class="navbar navbar-static-top" role="navigation">
+					<!-- Sidebar toggle button-->
+					<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+						<span class="sr-only">Toggle navigation</span>
+					</a>
+					
+					<div class="nav notify-row" id="top_menu">
+						<!--  notification start -->
+						<ul class="nav top-menu">
+							<li class="dropdown">
+								<a  class="dropdown-toggle" href="../mainpage/page1.html" >
+									<i class="fa fa-cog"></i> 系统管理
+								</a>
+							</li>
+							<!-- settings start -->
+							<li class="dropdown" style="float:left;">
+								<a class="dropdown-toggle" href="../mainpage/page4.html">
+									<i class="fa fa-tasks"></i> 信息管理
+								</a>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="../mainpage/page3.html" >
+									<i class="fa fa-tasks"></i> 投入品
+								</a>
+							</li>
+							
+                            <li class="dropdown">
+								<a class="dropdown-toggle" href="../mainpage/page2.html" >
+									<i class="fa fa-tasks"></i> 农产品
+								</a>
+							</li>
+							<li class="dropdown" style="float:left;">
+								<a class="dropdown-toggle" href="../mainpage/page5.html">
+									<i class="fa fa-tasks"></i> 质量检测
+								</a>
+							</li>
+						</ul>
+						<!--  notification end -->
+					</div>
+					
+					<!-- Navbar Right Menu -->
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<!-- User Account Menu -->
+							<li class="dropdown user user-menu">
+								<!-- Menu Toggle Button -->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<!-- The user image in the navbar-->
+									<img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+									<!-- hidden-xs hides the username on small devices so only the image appears. -->
+									<span class="hidden-xs">王先生</span>
+								</a>
+								<ul class="dropdown-menu">
+									<!-- The user image in the menu -->
+									<li class="user-header">
+										<img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+										<p>
+											王先生 - 景区用户
+											<small>会员自 2016年4月</small>
+										</p>
+									</li>
+									<!-- Menu Footer-->
+									<li class="user-footer">
+										<div class="pull-left">
+											<a href="#" class="btn btn-default btn-flat">个人信息</a>
+										</div>
+										<div class="pull-right">
+											<a href="#" class="btn btn-default btn-flat">退出</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<!-- Left side column. contains the logo and sidebar -->
+			<aside class="main-sidebar">
+
+				<!-- sidebar: style can be found in sidebar.less -->
+				<section class="sidebar">
+
+					<!-- Sidebar Menu -->
+					<ul class="sidebar-menu">
+						<li class="header">我的数据</li>
+						<!-- Optionally, you can add icons to the links -->
+						<li class="treeview">
+							<a href="../user_data/user_mgr.html"><i class="fa fa-database"></i> <span>管理员用户</span></a>
+						</li>
+						<li class="treeview">
+							<a href="../user_data/role_mgr.html"><i class="fa fa-database"></i> <span>管理员用户角色</span></a>
+						</li>
+						<li class="treeview">
+							<a href="../user_data/role_rights_mgr.html"><i class="fa fa-database"></i> <span>管理员权限管理</span> </a>
+						</li>
+						<li class="treeview">
+							<a href="../user_data/org_mgr.html"><i class="fa fa-database"></i> <span>组织架构管理</span></a>
+						</li>
+						<li class="treeview">
+							<a href="../user_data/org_mgr.html"><i class="fa fa-database"></i> <span>行政区划管理</span> </a>
+						</li>
+					</ul>
+					<!-- /.sidebar-menu -->
+				</section>
+				<!-- /.sidebar -->
+			</aside>
+
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper">
+				<!-- Content Header (Page header) -->
+				<section class="content-header">
+					<h1>
+            组织机构管理
+            <small></small>
+          </h1>
+					<ol class="breadcrumb">
+						<li>
+							<a href="#"><i class="fa fa-user"></i> 用户管理</a>
+						</li>
+						<li class="active">组织机构管理</li>
+					</ol>
+				</section>
+
+				<!-- Main content -->
+				<section class="content">
+					<!-- 内容主体 -->
+					<div class="row">
+						<!-- left column -->
+						<div class="col-md-12" style="padding-bottom:10px">
+							<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal"><span>新增组织结构</span></button>
+							<button type="button" id="addTJ" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myTJModal" disabled="disabled"><span>新增同级</span></button>
+							<button type="button" id="addChild" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myChildModal" disabled="disabled"><span>新增子级</span></button>
+							<button type="button" id="editOrg" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#editOrgModel" disabled="disabled"><span>修改</span></button>
+							<button type="button" id="delOrg" class="btn btn-sm btn-primary"  disabled="disabled"><span>删除</span></button>
+						</div>
+						<div class="col-md-12">
+							<div id="treeview-selectable" class=""></div>
+						</div>
+					</div>
+
+					<!-- 新增组织机构 -->
+					<!-- 模态框（Modal） -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+									</button>
+									<h4 class="modal-title" id="myModalLabel">
+										新增组织机构
+									</h4>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<form name="userForm" style="height: 100%;">
+											<div class="form-group">
+												<label for="inputEmail3" class="col-sm-4 control-label">组织机构名称</label>
+												<div class="col-sm-8">
+													<input type="text" name="name" class="form-control">
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" id="saveModal">
+										保存
+									</button>
+									<button type="button" class="btn btn-default" data-dismiss="modal">
+										关闭
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.modal -->
+
+					<!-- 新增子级组织机构 -->
+					<!-- 模态框（Modal） -->
+					<div class="modal fade" id="myChildModal" tabindex="-1" role="dialog" aria-labelledby="myChildModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+									</button>
+									<h4 class="modal-title" id="myChildModalLabel">
+										新增子级
+									</h4>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<form name="userForm" style="height: 100%;">
+											<div class="form-group">
+												<label for="inputEmail3" class="col-sm-4 control-label">组织机构名称</label>
+												<div class="col-sm-8">
+													<input type="text" name="name" class="form-control">
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" id="saveChildModal">
+										保存
+									</button>
+									<button type="button" class="btn btn-default" data-dismiss="modal">
+										关闭
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.modal -->
+					
+					<!-- 新增同级组织机构 -->
+					<!-- 模态框（Modal） -->
+					<div class="modal fade" id="myTJModal" tabindex="-1" role="dialog" aria-labelledby="myTJModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+									</button>
+									<h4 class="modal-title" id="myTJModalLabel">
+										新增同级
+									</h4>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<form name="userForm" style="height: 100%;">
+											<div class="form-group">
+												<label for="inputEmail3" class="col-sm-4 control-label">组织机构名称</label>
+												<div class="col-sm-8">
+													<input type="text" name="name" class="form-control">
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" id="saveTJModal">
+										保存
+									</button>
+									<button type="button" class="btn btn-default" data-dismiss="modal">
+										关闭
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.modal -->
+					
+					<!-- 修改 组织机构 -->
+					<!-- 模态框（Modal） -->
+					<div class="modal fade" id="editOrgModel" tabindex="-1" role="dialog" aria-labelledby="editOrgModelLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+									</button>
+									<h4 class="modal-title" id="editOrgModelLabel">
+										修改
+									</h4>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<form name="userForm" style="height: 100%;">
+											<div class="form-group">
+												<label for="inputEmail3" class="col-sm-4 control-label">组织机构名称</label>
+												<div class="col-sm-8">
+													<input type="text" name="name" class="form-control">
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" id="saveEditOrgModal">
+										保存
+									</button>
+									<button type="button" class="btn btn-default" data-dismiss="modal">
+										关闭
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.modal -->
+
+				</section>
+
+			</div>
+			<!-- /.content-wrapper -->
+
+			<!-- Main Footer -->
+			<footer class="main-footer">
+				<!-- To the right -->
+				<div class="pull-right hidden-xs">
+
+				</div>
+				<!-- Default to the left -->
+				<strong>Copyright &copy; 2016  All rights reserved. 
+			</footer>
+
+		</div>
+		<!-- ./wrapper -->
+
+		<!-- REQUIRED JS SCRIPTS -->
+
+		<!-- jQuery 2.1.4 -->
+		<script src="../../plugins/jQuery/jQuery-2.1.4.min.js"></script>
+		<!-- Bootstrap 3.3.5 -->
+		<script src="../../bootstrap/js/bootstrap.min.js"></script>
+		<!-- AdminLTE App -->
+		<script src="../../dist/js/app.min.js"></script>
+		<script src="../../plugins/bootstrap-treeview/bootstrap-treeview.js" type="text/javascript" charset="utf-8"></script>
+		<!-- Added -->
+		<!-- date-range-picker -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+		<script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+		<!-- bootstrap time picker -->
+		<script src="../../plugins/timepicker/bootstrap-timepicker.min.js"></script>
+
+		<!-- Optionally, you can add Slimscroll and FastClick plugins.
+         Both of these plugins are recommended to enhance the
+         user experience. Slimscroll is required when using the
+         fixed layout. -->
+
+		<script>
+			var optOrgid;
+			var optOrgname;
+			$(function() {
+				var defaultData = [{
+					id: '1',
+					text: '总经理办公室',
+					href: '#总经理办公室',
+					tags: ['4'],
+					nodes: [{
+						id: '2',
+						text: 'IT部',
+						href: '#IT部',
+						tags: ['0']
+					}, {
+						id: '3',
+						text: '运营部',
+						href: '#运营部',
+						tags: ['0']
+					}, {
+						id: '4',
+						text: '客服部',
+						href: '#客服部',
+						tags: ['0']
+					}]
+				}, {
+					id: '5',
+					text: '财务部',
+					href: '#财务部',
+					tags: ['0']
+				}];
+
+				var initSelectableTree = function() {
+					return $('#treeview-selectable').treeview({
+						data: defaultData,
+						multiSelect: $('#chk-select-multi').is(':checked'),
+						onNodeSelected: function(event, node) {
+							optOrgid = node.id;
+							optOrgname = node.text;
+							$("#addChild").attr("disabled", false);
+							$("#addTJ").attr("disabled", false);
+							$("#editOrg").attr("disabled", false);
+							$("#delOrg").attr("disabled", false);
+						},
+						onNodeUnselected: function(event, node) {
+							optOrgid = null;
+							optOrgname = null;
+							$("#addChild").attr("disabled", true);
+							$("#addTJ").attr("disabled", true);
+							$("#editOrg").attr("disabled", true);
+							$("#delOrg").attr("disabled", true);
+						}
+					});
+				};
+				var $selectableTree = initSelectableTree();
+
+				var findSelectableNodes = function() {
+					return $selectableTree.treeview('search', [$('#input-select-node').val(), {
+						ignoreCase: false,
+						exactMatch: false
+					}]);
+				};
+				var selectableNodes = findSelectableNodes();
+
+				$('#chk-select-multi:checkbox').on('change', function() {
+					console.log('multi-select change');
+					$selectableTree = initSelectableTree();
+					selectableNodes = findSelectableNodes();
+				});
+
+				// 新增组织机构-保存
+				$('#saveModal').on('click', function() {
+					$('#myModal').modal('hide');
+				});
+				// 新增同级组织机构-保存
+				$('#saveTJModal').on('click', function() {
+					$('#myTJModal').modal('hide');
+				});
+				// 新增子组织机构-保存
+				$('#saveChildModal').on('click', function() {
+					$('#myChildModal').modal('hide');
+				});
+				// 修改-保存
+				$('#saveEditOrgModal').on('click', function() {
+					$('#editOrgModel').modal('hide');
+				});
+
+			});
+		</script>
+
+	</body>
+
+</html>

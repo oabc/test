@@ -1,0 +1,447 @@
+﻿<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>农产品质量安全监管追溯平台</title>
+		<!-- Tell the browser to be responsive to screen width -->
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+		<!-- The jQuery library is a prerequisite for all jqSuite products -->
+		<script src="../../plugins/jQuery/jQuery-2.1.4.min.js"></script>
+		<!-- Bootstrap 3.3.5 -->
+		<link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="../../plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+		<!-- Ionicons -->
+		<link rel="stylesheet" href="../../plugins/ionicons-2.0.1/css/ionicons.min.css">
+
+		<!-- We support more than 40 localizations -->
+		<script src="../../plugins/jqgrid/js/i18n/grid.locale-zh.js" type="text/javascript" charset="utf-8"></script>
+		<!-- This is the Javascript file of jqGrid -->
+		<script type="text/ecmascript" src="../../plugins/jqgrid/js/jquery.jqGrid.min.js"></script>
+		<!-- The link to the CSS that the grid needs -->
+		<link rel="stylesheet" type="text/css" media="screen" href="../../plugins/jqgrid/css/ui.jqgrid-bootstrap.css" />
+
+		<!-- Theme style -->
+		<link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+		<!-- AdminLTE Skins. We have chosen the skin-blue for this starter
+          page. However, you can choose any other skin. Make sure you
+          apply the skin class to the body tag so the changes take effect.
+    -->
+		<link rel="stylesheet" href="../../dist/css/skins/skin-blue.min.css">
+
+		<!-- Added -->
+		<!-- daterange picker -->
+		<link rel="stylesheet" href="../../plugins/daterangepicker/daterangepicker-bs3.css">
+		<!-- Bootstrap time Picker -->
+		<link rel="stylesheet" href="../../plugins/timepicker/bootstrap-timepicker.min.css">
+
+		<link rel="stylesheet" href="../../dist/css/my.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+		<script>
+			$.jgrid.defaults.responsive = true;
+			$.jgrid.defaults.styleUI = 'Bootstrap';
+		</script>
+	</head>
+	<body class="hold-transition skin-blue sidebar-mini">
+		<div class="wrapper">
+
+			<!-- Main Header -->
+			<header class="main-header">
+
+				<!-- Logo -->
+				<a href="" class="logo">
+					<!-- mini logo for sidebar mini 50x50 pixels -->
+					<span class="logo-mini"><b>智旅</b></span>
+					<!-- logo for regular state and mobile devices -->
+					<span class="logo-lg"><img src="../../dist/img/logo.png"></span>
+				</a>
+
+				<!-- Header Navbar -->
+				<nav class="navbar navbar-static-top" role="navigation">
+					<!-- Sidebar toggle button-->
+					<a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+						<span class="sr-only">Toggle navigation</span>
+					</a>
+
+					<div class="nav notify-row" id="top_menu">
+						<!--  notification start -->
+						<ul class="nav top-menu">
+							<li class="dropdown">
+								<a  class="dropdown-toggle" href="../mainpage/page1.html" >
+									<i class="fa fa-cog"></i> 系统管理
+								</a>
+							</li>
+							<!-- settings start -->
+							<li class="dropdown" style="float:left;">
+								<a class="dropdown-toggle" href="../mainpage/page2.html">
+									<i class="fa fa-tasks"></i> 信息管理
+								</a>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" href="../mainpage/page3.html" >
+									<i class="fa fa-tasks"></i> 投入品
+								</a>
+							</li>
+							
+<li class="dropdown">
+								<a class="dropdown-toggle" href="../mainpage/page4.html" >
+									<i class="fa fa-tasks"></i> 农产品
+								</a>
+							</li>
+							<li class="dropdown" style="float:left;">
+								<a class="dropdown-toggle" href="../mainpage/page5.html">
+									<i class="fa fa-tasks"></i> 质量检测
+								</a>
+							</li>
+						</ul>
+						<!--  notification end -->
+					</div>
+					<!-- Navbar Right Menu -->
+					<div class="navbar-custom-menu">
+						<ul class="nav navbar-nav">
+							<!-- User Account Menu -->
+							<li class="dropdown user user-menu">
+								<!-- Menu Toggle Button -->
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<!-- The user image in the navbar-->
+									<img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+									<!-- hidden-xs hides the username on small devices so only the image appears. -->
+									<span class="hidden-xs">王先生</span>
+								</a>
+								<ul class="dropdown-menu">
+									<!-- The user image in the menu -->
+									<li class="user-header">
+										<img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+										<p>
+											王先生 - 景区用户
+											<small>会员自 2016年4月</small>
+										</p>
+									</li>
+									<!-- Menu Footer-->
+									<li class="user-footer">
+										<div class="pull-left">
+											<a href="#" class="btn btn-default btn-flat">个人信息</a>
+										</div>
+										<div class="pull-right">
+											<a href="#" class="btn btn-default btn-flat">退出</a>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</header>
+			<!-- Left side column. contains the logo and sidebar -->
+			<aside class="main-sidebar">
+
+				<!-- sidebar: style can be found in sidebar.less -->
+				<section class="sidebar">
+					<!-- Sidebar Menu -->
+					<!-- Sidebar Menu -->
+						<ul class="sidebar-menu">
+							<li class="header">我的数据</li>
+							<!-- Optionally, you can add icons to the links -->
+							<li class="treeview">
+								<a href="#"><i class="fa fa-database"></i> <span>农业投入品追溯监管系统基础管理</span> <i class="fa fa-angle-left pull-right"></i></a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="../trp/3.11.html"><i class="fa fa-circle-o"></i> 农业投入品分类维护</a>
+									</li>
+									<li>
+										<a href="../trp/3.12.html"><i class="fa fa-circle-o"></i> 规格、规格单位维护</a>
+									</li>
+									<li>
+										<a href="../trp/3.13.html"><i class="fa fa-circle-o"></i> 登记证类型维护</a>
+									</li>
+									<li>
+										<a href="../trp/3.14.html"><i class="fa fa-circle-o"></i> 农业投入品信息维护</a>
+									</li>
+									<li>
+										<a href="../trp/3.15.html"><i class="fa fa-circle-o"></i> 农业投入品经销商管理</a>
+									</li>
+									<li>
+										<a href="../trp/3.16.html"><i class="fa fa-circle-o"></i> 农业投入品经营门店管理</a>
+									</li>
+									<li>
+										<a href="../trp/3.17.html"><i class="fa fa-circle-o"></i> 农业投入品追溯码规则管理和编辑</a>
+									</li>
+									<li>
+										<a href="../trp/3.18.html"><i class="fa fa-circle-o"></i> 农业投入品追溯码的生成发放管理</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="#"><i class="fa fa-database"></i> <span>投入品门店经营管理子系统</span> <i class="fa fa-angle-left pull-right"></i></a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="../trp/3.21.html"><i class="fa fa-circle-o"></i> 经营数据上报</a>
+									</li>
+									<li>
+										<a href="../trp/3.22.html"><i class="fa fa-circle-o"></i> 保质期预警</a>
+									</li>
+									<li>
+										<a href="../trp/3.23.html"><i class="fa fa-circle-o"></i> 库存不足预警</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="#"><i class="fa fa-database"></i> <span>经营告知管理子系统</span> <i class="fa fa-angle-left pull-right"></i></a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="../trp/3.31.html"><i class="fa fa-circle-o"></i> 经营告知事项分类管理</a>
+									</li>
+									<li>
+										<a href="../trp/3.32.html"><i class="fa fa-circle-o"></i> 经营告知申请与进度通知</a>
+									</li>
+									<li>
+										<a href="../trp/3.33.html"><i class="fa fa-circle-o"></i> 经营告知受理审核</a>
+									</li>
+									<li>
+										<a href="../trp/3.34.html"><i class="fa fa-circle-o"></i> 经营告知公示</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="#"><i class="fa fa-database"></i> <span>高毒农药追溯标签管理子系统</span> <i class="fa fa-angle-left pull-right"></i></a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="../trp/3.41.html"><i class="fa fa-circle-o"></i> 经营资格申请与核准</a>
+									</li>
+									<li>
+										<a href="../trp/3.42.html"><i class="fa fa-circle-o"></i> 进货登记</a>
+									</li>
+									<li>
+										<a href="../trp/3.43.html"><i class="fa fa-circle-o"></i> 申请领取追溯码</a>
+									</li>
+									<li>
+										<a href="../trp/3.44.html"><i class="fa fa-circle-o"></i> 追溯查询</a>
+									</li>
+									<li>
+										<a href="../trp/3.45.html"><i class="fa fa-circle-o"></i> 实名销售</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="#"><i class="fa fa-database"></i> <span>进销台账管理子系统</span> <i class="fa fa-angle-left pull-right"></i></a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="../trp/3.51.html"><i class="fa fa-circle-o"></i> 出库</a>
+									</li>
+									<li>
+										<a href="../trp/3.52.html"><i class="fa fa-circle-o"></i> 入库</a>
+									</li>
+									<li>
+										<a href="../trp/3.53.html"><i class="fa fa-circle-o"></i> 退库</a>
+									</li>
+									<li>
+										<a href="../trp/3.54.html"><i class="fa fa-circle-o"></i> 对账</a>
+									</li>
+									<li>
+										<a href="../trp/3.55.html"><i class="fa fa-circle-o"></i> 台账查询查看</a>
+									</li>
+								</ul>
+							</li>
+							<li class="treeview">
+								<a href="#"><i class="fa fa-database"></i> <span>投入品执法检查子系统</span> <i class="fa fa-angle-left pull-right"></i></a>
+								<ul class="treeview-menu">
+									<li>
+										<a href="../trp/3.61.html"><i class="fa fa-circle-o"></i> 检测项维护</a>
+									</li>
+									<li>
+										<a href="../trp/3.62.html"><i class="fa fa-circle-o"></i> 检测结果上传、查询查看</a>
+									</li>
+									<li>
+										<a href="../trp/3.63.html"><i class="fa fa-circle-o"></i> 执法报告模版维护</a>
+									</li>
+									<li>
+										<a href="../trp/3.64.html"><i class="fa fa-circle-o"></i> 执法报告生成与出具与打印</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+				</section>
+				<!-- /.sidebar -->
+			</aside>
+
+			<!-- Content Wrapper. Contains page content -->
+			<div class="content-wrapper">
+				<!-- Content Header (Page header) -->
+				<section class="content-header">
+					<h1>
+            经营告知公示
+            <small></small>
+          </h1>
+					<ol class="breadcrumb">
+						<li>
+							<a href="#"><i class="fa fa-user"></i> 基础管理</a>
+						</li>
+						<li class="active">经营告知公示</li>
+					</ol>
+				</section>
+
+				<!-- Main content -->
+				<section class="content">
+					<div class="row">
+						<!-- left column -->
+						<div class="col-md-12">
+							<!-- general form elements -->
+							<div class="box box-primary">
+								<div class="box-header with-border">
+									<h3 class="box-title"></h3>
+								</div>
+								<!-- /.box-header -->
+								<!-- form start -->
+								<!--按钮组-->
+								<button type="button" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#myModal"><span>申请</span></button>
+								<button type="button" class="btn btn-sm btn-primary" ng-click="update()" ng-disabled="!singleFlag"><span>修改</span></button>
+								<button type="button" class="btn btn-sm btn-primary" ng-click="delete()" ng-disabled="zeroFlag"><span>删除</span></button>
+								<button type="button" class="btn btn-sm btn-primary" ng-click="lookatall()" ng-disabled="zeroFlag"><span>公示</span></button>
+								<button type="button" class="btn btn-sm btn-primary" ng-click="look()" ng-disabled="zeroFlag"><span>查看</span></button>
+								<button type="button" class="btn btn-sm btn-primary" ng-click="check()" ng-disabled="zeroFlag"><span>审核</span></button>
+                                <button type="button" class="btn btn-sm btn-primary" ng-click="import()" ng-disabled="zeroFlag"><span>导入</span></button>
+                                <button type="button" class="btn btn-sm btn-primary" ng-click="export()" ng-disabled="zeroFlag"><span>导出</span></button>
+								<button type="button" class="btn btn-sm btn-primary" ng-click="load()"><i class="fa fa-refresh"></i></button>
+								<div class="form-inline" style="padding-top: 10px;" role="form">
+									<input type="text" ng-model="name" class="form-control" placeholder="名称">
+									<input type="text" ng-model="phone" class="form-control" placeholder="所属分类">
+									<button class="btn btn-sm btn-primary" ng-click='load()' type="button">搜索</button>
+								</div>
+								<hr>
+								<div class="row">
+									<div style="margin:20px">
+										<table id="jqGrid"></table>
+										<div id="jqGridPager"></div>
+									</div>
+
+								</div>
+
+							</div>
+							<!-- /.box -->
+						</div>
+					</div>
+					<!-- 模态框（Modal） -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+									</button>
+									<h4 class="modal-title" id="myModalLabel">
+										新增用户
+									</h4>
+								</div>
+								<div class="modal-body">
+									<div class="row">
+										<form name="userForm" style="height: 100%;">
+										<div class="form-group">
+											<label for="inputEmail3" class="col-sm-4 control-label">经营告知公示</label>
+											<div class="col-sm-8">
+												<input type="text" name="username" class="form-control"  >
+											</div>
+						                </div>
+									</form>
+									</div>
+									
+								</div>
+								<div class="modal-footer">
+									<button type="button" class="btn btn-primary" id="save_userForm" onclick="$('#myModal').modal('hide')">
+										保存
+									</button>
+									<button type="button" class="btn btn-default" data-dismiss="modal">
+										关闭
+									</button>
+								</div>
+							</div>
+							<!-- /.modal-content -->
+						</div>
+						<!-- /.modal-dialog -->
+					</div>
+					<!-- /.modal -->
+
+				</section>
+				<!-- /.content -->
+			</div>
+			<!-- /.content-wrapper -->
+			<!-- Main Footer -->
+			<footer class="main-footer">
+				<!-- To the right -->
+				<div class="pull-right hidden-xs">
+
+				</div>
+				<!-- Default to the left -->
+				<strong>Copyright &copy; 2016 .</strong> All rights reserved. 
+			</footer>
+
+		</div>
+		<!-- ./wrapper -->
+
+		<!-- REQUIRED JS SCRIPTS -->
+
+		<!-- Bootstrap 3.3.5 -->
+		<script src="../../bootstrap/js/bootstrap.min.js"></script>
+		<!-- AdminLTE App -->
+		<script src="../../dist/js/app.min.js"></script>
+
+		<script src="../../plugins/bootstrap-treeview/bootstrap-treeview.js" type="text/javascript" charset="utf-8"></script>
+
+		<!-- Added -->
+		<!-- date-range-picker -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+		<script src="../../plugins/daterangepicker/daterangepicker.js"></script>
+		<!-- bootstrap time picker -->
+		<script src="../../plugins/timepicker/bootstrap-timepicker.min.js"></script>
+
+		<!-- Optionally, you can add Slimscroll and FastClick plugins.
+         Both of these plugins are recommended to enhance the
+         user experience. Slimscroll is required when using the
+         fixed layout. -->
+
+		<script>
+			$(function() {
+
+				//Date range picker
+				$('#reasonal_rest_time').daterangepicker();
+
+				//Timepicker
+				$(".timepicker").timepicker({
+					showInputs: false
+				});
+				setTimeout(function(){$(window).trigger("resize")},0);
+				$('#save_userForm').on('click', function() {
+					$('#myModal').modal('hide');
+			    });
+			});
+		</script>
+									<script type="text/javascript">
+										$(document).ready(function() {
+											$("#jqGrid").jqGrid({
+												url: 'data.json',
+												datatype: "json",
+												styleUI: 'Bootstrap',
+												colModel: [{
+													label: '经营告知公示',
+													name: 'a',
+													key: true,
+													width: 75
+												}],
+												rowNum: 20,
+												viewrecords: true,
+												rowList: [20, 30, 50],
+												loadonce: true, // this is just for the demo
+												pager: "#jqGridPager"
+											});
+										});
+									</script>

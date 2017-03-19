@@ -1,0 +1,16 @@
+{
+   "rows":[
+      {
+         "rolename":"超级管理员",
+         "roleorder":"1"
+      },
+      {
+         "rolename":"普通管理员",
+         "roleorder":"2"
+      },
+      {
+         "rolename":"客服专员",
+         "roleorder":"3"
+      }
+   ]
+}
